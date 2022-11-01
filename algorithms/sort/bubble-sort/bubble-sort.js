@@ -5,7 +5,8 @@ function bubbleSort(originalArray) {
     for (let i = 0; i < arrLength; i++) {
         swapped = false;
         for (let j = 0; j < arrLength - i - 1; j++) {
-            // If element at lower index is greater
+            // For ascending sort, swap if element at lower index is greater
+            // Change sign to < for descending sort
             if (copyOfArray[j] > copyOfArray[j + 1]) {
                 [copyOfArray[j], copyOfArray[j + 1]] = [copyOfArray[j + 1], copyOfArray[j]];
                 swapped = true;
@@ -19,5 +20,5 @@ function bubbleSort(originalArray) {
 }
 
 // Test
-const arrayToSort = [0, -1, 4, -4]
+const arrayToSort = [71, 0, 89, 33, -1, 4, -4];
 console.log(bubbleSort(arrayToSort));
