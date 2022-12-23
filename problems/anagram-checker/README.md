@@ -1,6 +1,6 @@
 # Anagram Checker
 
-Write a function that takes two strings as arguments and returns true if they are anagrams, and false if they are not.
+Anagrams are words of the same length, made up of the exact same set of characters. Write a function that takes two strings as arguments and returns true if they are anagrams, and false if they are not.
 
 ``` js
 str1 = "wasp"
