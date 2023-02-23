@@ -5,7 +5,7 @@ function minWindowSubstring(strArr) {
         for (let j = windowWidth; j <= str.length; j++) {
             const subStr = str.slice(j - windowWidth, j);
             if (isContained(subStr, sub)) {
-            return subStr;
+                return subStr;
             }
         }
         windowWidth++;
@@ -17,7 +17,7 @@ function minWindowSubstring(strArr) {
         let newStr = str;
         for (let i = 0; i < subStr.length; i++) {
             if (!newStr.includes(subStr[i])) {
-            return false;
+                return false;
             }
             newStr = newStr.replace(subStr[i], "");
         }
